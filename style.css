@@ -1,0 +1,613 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #86eca4;
+    font-family: axiforma;
+}
+@font-face {
+    font-family: axiforma;
+    src: url(Axiforma-Regular.ttf);
+}
+header{
+    background: linear-gradient(0deg, #86eca4 0%, rgba(255,255,255,1) 12%);
+    border-bottom: 3px solid rgba(255, 255, 255, 0.427);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+}
+.lengauges{
+    position: absolute;
+    display: flex ;
+    align-items: center;
+    justify-content: space-between;
+    width: 70px;
+    left: 10px;
+    top: 20px;
+    z-index: 1000;
+}
+.lengauges img{
+    width: 30px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.lengauges a{
+    z-index: 1000;
+}
+
+header p{
+    font-size: 50px;
+    font-family: axiforma;
+    color: #5fcf80;
+    text-shadow: 0px 5px 10px rgb(255, 255, 255);
+}
+header img{
+    z-index: 100;
+}
+/* animation */
+.context {
+    width: 100%;
+    position: absolute;
+    top:50vh;
+    
+}
+
+.context h1{
+    text-align: center;
+    color: #fff;
+    font-size: 50px;
+}
+
+
+.circles{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.circles img{
+    width: 95%;
+    height: 95%;
+    opacity: 0.5;
+    filter: blur(0.1);
+    transform: rotate(180deg);
+}
+
+.circles li{
+    position: absolute;
+    display: block;
+    list-style: none;
+    width: 20px;
+    height: 20px;
+    background: rgba(255, 255, 255, 0.58);
+    animation: animate 25s linear infinite;
+    bottom: -150px;
+}
+
+.circles li:nth-child(1){
+    left: 25%;
+    width: 80px;
+    height: 80px;
+    animation-delay: 0s;
+}
+
+
+.circles li:nth-child(2){
+    left: 10%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 2s;
+    animation-duration: 12s;
+}
+
+.circles li:nth-child(3){
+    left: 70%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 4s;
+}
+
+.circles li:nth-child(4){
+    left: 40%;
+    width: 60px;
+    height: 60px;
+    animation-delay: 0s;
+    animation-duration: 18s;
+}
+
+.circles li:nth-child(5){
+    left: 65%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 0s;
+}
+
+.circles li:nth-child(6){
+    left: 75%;
+    width: 110px;
+    height: 110px;
+    animation-delay: 3s;
+}
+
+.circles li:nth-child(7){
+    left: 15%;
+    width: 150px;
+    height: 150px;
+    animation-delay: 7s;
+}
+
+.circles li:nth-child(8){
+    left: 50%;
+    width: 25px;
+    height: 25px;
+    animation-delay: 15s;
+    animation-duration: 45s;
+}
+
+.circles li:nth-child(9){
+    left: 20%;
+    width: 15px;
+    height: 15px;
+    animation-delay: 10s;
+    animation-duration: 13s;
+}
+
+.circles li:nth-child(10){
+    left: 70%;
+    width: 150px;
+    height: 150px;
+    animation-delay: 0s;
+    animation-duration: 11s;
+}
+
+.circles li:nth-child(11){
+    left: 35%;
+    width: 60px;
+    height: 60px;
+    animation-delay: 0s;
+}
+
+
+.circles li:nth-child(12){
+    left: 10%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 5s;
+    animation-duration: 10s;
+}
+
+.circles li:nth-child(13){
+    left: 20%;
+    width: 35px;
+    height: 35px;
+    animation-delay: 4s;
+}
+
+.circles li:nth-child(14){
+    left: 40%;
+    width: 70px;
+    height: 70px;
+    animation-delay: 6s;
+    animation-duration: 7s;
+}
+
+.circles li:nth-child(15){
+    left: 90%;
+    width: 81px;
+    height: 81px;
+    animation-delay: 0s;
+}
+
+.circles li:nth-child(16){
+    left: 75%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 3s;
+}
+
+.circles li:nth-child(17){
+    left: 65%;
+    width: 80px;
+    height: 80px;
+    animation-delay: 5s;
+}
+
+.circles li:nth-child(18){
+    left: 10%;
+    width: 36px;
+    height: 36px;
+    animation-delay: 7s;
+    animation-duration: 7s;
+}
+
+.circles li:nth-child(19){
+    left: 45%;
+    width: 60px;
+    height: 60px;
+    animation-delay: 7s;
+    animation-duration: 10s;
+}
+
+.circles li:nth-child(20){
+    left: 80%;
+    width: 120px;
+    height: 120px;
+    animation-delay: 10s;
+    animation-duration: 10s;
+}
+
+
+
+@keyframes animate {
+
+    0%{
+        transform: translateY(0) rotate(0deg);
+        opacity: 1;
+        border-radius: 0;
+    }
+
+    100%{
+        transform: translateY(-1000px) rotate(720deg);
+        opacity: 0;
+        border-radius: 50%;
+    }
+
+}
+/* section */
+.section1proj{
+    font-size: 50px;
+    font-family: axiforma;
+    color: #5fcf80;
+    text-shadow: 0px 5px 10px rgb(255, 255, 255);
+    z-index: 100;
+    text-align: center;
+}
+.section1 div a img{
+    width: 500px;
+    border: 2px solid rgb(255, 255, 255);
+    box-shadow: 0px 0px 10px black;
+}
+.section1 div{
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.section1{
+    border-bottom:  2px solid rgba(255, 255, 255, 0.549);
+    padding: 30px;
+}
+
+.section1 div div span {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.763);
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: space-evenly;
+    color: white;
+    opacity: 0;
+    transition: 1s;
+}
+
+.section1 div div span  button{
+    width: 150px;
+    height: 30px;
+    background-color: #5fcf80;
+    color: white;
+    border: none;
+    font-family: axiforma;
+    border-radius: 10px;
+    cursor: pointer;
+    
+}
+.section1 div div span  button:hover{
+    animation: shake 2s infinite;
+}
+@keyframes shake{
+    10%{transform: scale(1.05) rotate(5deg);}
+    20%{transform: scale(1.1) rotate(-15deg); background-color: crimson;}
+    30%{transform: scale(1.05) rotate(5deg); background-color: #5fcf80;}
+    40%{transform: none;}
+}
+.proj1{
+    background-image: url(project1.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 600px;
+    height: 300px;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s;
+    overflow: hidden;
+}
+.section1 div div:hover , .section1 div div:focus{
+    -ms-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    transform: scale(1.05);
+}
+.proj2{
+    background-image: url(project2.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 600px;
+    height: 300px;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s;
+    overflow: hidden;
+}
+.proj3{
+    background-image: url(project3.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 600px;
+    height: 300px;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s;
+    overflow: hidden;
+}
+.proj4{
+    background-image: url(project4.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 600px;
+    height: 300px;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s;
+    overflow: hidden;
+}
+.proj5{
+    background-image: url(project5.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 600px;
+    height: 300px;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s;
+    overflow: hidden;
+}
+.proj6{
+    background-image: url(project6.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 600px;
+    height: 300px;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s;
+    overflow: hidden;
+}
+.proj7{
+    background-image: url(project7.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 600px;
+    height: 300px;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s;
+    overflow: hidden;
+}
+.proj8{
+    background-image: url(project8.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 600px;
+    height: 300px;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s;
+    overflow: hidden;
+}
+.proj9{
+    background-image: url(project9.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 600px;
+    height: 300px;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s;
+    overflow: hidden;
+}
+.proj10{
+    background-image: url(project10.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 600px;
+    height: 300px;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s;
+    overflow: hidden;
+}
+.proj11{
+    background-image: url(project11.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 600px;
+    height: 300px;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s;
+    overflow: hidden;
+}
+#secondDivSec1 a{
+    color: #000000;
+    text-shadow: 0px 0px 10px rgb(255, 255, 255), 0px 0px 5px rgb(255, 255, 255);
+    transition:all 0.2s;
+    display:inline-block;
+    font-size: 20px;
+    text-decoration: none;
+    padding: 10px;
+    
+}
+#secondDivSec1 a:hover{
+    font-size: 25px;
+    animation: shakeLink 2s infinite;
+    text-shadow: 1px 1px 10px rgb(142, 113, 113);
+    color: #686868;
+
+}
+
+/* footer */
+footer{
+    padding: 50px 20px 10px 20px;
+    color: rgb(0, 0, 0);
+    text-shadow: 2px 2px 5px rgb(255, 255, 255);
+}
+
+.footerDiv1{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+.iconsDiv a{
+    text-decoration: none;
+    color: #ffffff;
+    text-shadow: 1px 1px 8px black;
+}
+.iconsDiv{
+    width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logoWeb{
+    width: 32px;
+    border-radius: 12px;
+    margin-top: 5px;
+}
+#itaWeb{
+    font-size: 10px;
+    margin-left: -25px;
+    text-shadow: 1px 1px 8px black;
+}
+#insta{
+    margin-right: -10px;
+    margin-top: -5px;
+}
+#fb{
+    margin-top: -5px;
+   
+}
+.footerP{
+    text-align: center;
+    margin-top: 10px;
+    
+}
+.textDiv a{
+    text-decoration: none;
+    color: rgb(80, 132, 70)
+}
+
+
+
+
+
+
+@media only screen and (max-width:1290px) {
+    .section1 div div{
+        width: 450px;
+        height: 220px;
+    }
+    .section1 div{
+       justify-content: space-evenly;
+    }
+    .section1{
+        padding: 0;
+    }
+}
+
+@media only screen and (max-width:985px) {
+    .section1 div div{
+        width: 350px;
+        height: 170px;
+    }
+    .section1 div{
+       justify-content: space-around;
+       margin-top: 10px;
+     
+    }
+    
+}
+
+@media only screen and (max-width:780px) {
+    .section1 div div{
+        width: 90%;
+        height: 170px; 
+        margin: 15px;
+    }
+    .section1 div{
+       justify-content: space-around;
+       margin-top: 10px;
+        flex-direction: column;
+    }
+    .section1 div  {
+       margin-top: 0;
+    }
+    
+}
+
+@media screen and (max-width:520px){
+    .footerDiv1{
+        flex-direction: column;
+    }
+    header img{
+        width: 150px;
+    }
+    header p{
+        font-size: 30px;
+    }
+    footer{
+        padding: 10px;
+    }
+    .textDiv{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .textDiv p{
+        font-size: 15px;
+    }
+    #secondDivSec1 a{
+        font-size: 15px;
+    }
+}
